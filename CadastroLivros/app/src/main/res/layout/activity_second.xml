@@ -7,4 +7,103 @@
     android:layout_height="match_parent"
     tools:context=".view.SecondActivity">
 
+
+    <TextView
+        android:id="@+id/lblTitulo"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+
+        android:text="Título"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:text=""
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblTitulo"
+
+        />
+
+
+    <TextView
+        android:id="@+id/lblAutor"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+
+        android:text="Autor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtAutor"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:text=""
+        android:textSize="20sp"
+
+        app:layout_constraintTop_toBottomOf="@id/lblAutor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnVoltar"
+
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+
+        android:backgroundTint="#4CAF50"
+        android:text="Próximo"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAutor" />
+
+    <Button
+        android:id="@+id/btnSair"
+
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+
+        android:backgroundTint="#DC1111"
+        android:text="Sair"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVoltar" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
